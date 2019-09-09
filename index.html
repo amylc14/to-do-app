@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To-Do App</title>
+    <style>
+      .mdl-layout__content {
+        margin: 20px;
+      }
+      .mdl-button i {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">To-Do App</span>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <form id="addToDoForm">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="newToDoText" autocomplete="off">
+            <label class="mdl-textfield__label" for="sample3">New To-Do...</label>
+          </div>
+          <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Add To-Do!</button>
+        </form>
+        <ul id="toDoList" class="mdl-list">
+        </ul>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
